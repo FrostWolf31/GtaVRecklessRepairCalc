@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Upgrade Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .section { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="number"] { width: 100px; }
+        .total { font-size: 1.2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Upgrade Calculator</h1>
+        
+        <div class="section">
+            <h2>Full Upgrade Kits</h2>
+            <label>
+                Used Car Lot Gets Reckless Full Upgrade Kit ($70K per car):
+                <input type="number" id="recklessKitCount" value="0">
+            </label>
+            <label>
+                Demon (Yellow) Gang Members Get Full Upgrades ($150K):
+                <input type="number" id="demonKitCount" value="0">
+            </label>
+        </div>
+
+        <div class="section">
+            <h2>Repairs and Paint Services</h2>
+            <label>
+                Repairs ($3,500):
+                <input type="number" id="repairsCount" value="0">
+            </label>
+            <label>
+                Reckless Paint Services ($10K):
+                <input type="number" id="recklessPaintCount" value="0">
+            </label>
+            <label>
+                Basic Paint Services ($4K):
+                <input type="number" id="basicPaintCount" value="0">
+            </label>
+        </div>
+
+        <div class="section">
+            <h2>Cosmetics and NOS</h2>
+            <label>
+                Cosmetics ($1,500 each part):
+                <input type="number" id="cosmeticsCount" value="0">
+            </label>
+            <label>
+                NOS Bottles ($400K):
+                <input type="number" id="nosBottlesCount" value="0">
+            </label>
+            <label>
+                NOS Refill ($200K):
+                <input type="number" id="nosRefillCount" value="0">
+            </label>
+        </div>
+
+        <div class="section">
+            <h2>Performance Items</h2>
+            <label>
+                Turbo ($30K):
+                <input type="number" id="turboCount" value="0">
+            </label>
+            <label>
+                Engine ($6K, $15K, $22.5K, $30K, $60K):
+                <input type="number" id="engine6kCount" value="0"> ($6K)
+                <input type="number" id="engine15kCount" value="0"> ($15K)
+                <input type="number" id="engine22kCount" value="0"> ($22.5K)
+                <input type="number" id="engine30kCount" value="0"> ($30K)
+                <input type="number" id="engine60kCount" value="0"> ($60K)
+            </label>
+            <label>
+                Brakes ($9.9K, $19.8K, $30K):
+                <input type="number" id="brakes99kCount" value="0"> ($9.9K)
+                <input type="number" id="brakes198kCount" value="0"> ($19.8K)
+                <input type="number" id="brakes30kCount" value="0"> ($30K)
+            </label>
+            <label>
+                Suspension ($6K, $12K, $18K, $24K, $30K):
+                <input type="number" id="suspension6kCount" value="0"> ($6K)
+                <input type="number" id="suspension12kCount" value="0"> ($12K)
+                <input type="number" id="suspension18kCount" value="0"> ($18K)
+                <input type="number" id="suspension24kCount" value="0"> ($24K)
+                <input type="number" id="suspension30kCount" value="0"> ($30K)
+            </label>
+            <label>
+                Transmission ($7.5K, $15K, $22.5K, $30K):
+                <input type="number" id="transmission75kCount" value="0"> ($7.5K)
+                <input type="number" id="transmission15kCount" value="0"> ($15K)
+                <input type="number" id="transmission225kCount" value="0"> ($22.5K)
+                <input type="number" id="transmission30kCount" value="0"> ($30K)
+            </label>
+            <label>
+                Armor ($15K):
+                <input type="number" id="armorCount" value="0">
+            </label>
+            <label>
+                Oil Pump ($1.5K, $3K, $6K):
+                <input type="number" id="oilPump15kCount" value="0"> ($1.5K)
+                <input type="number" id="oilPump3kCount" value="0"> ($3K)
+                <input type="number" id="oilPump6kCount" value="0"> ($6K)
+            </label>
+            <label>
+                Drive Shaft ($3K, $6K, $9K):
+                <input type="number" id="driveShaft3kCount" value="0"> ($3K)
+                <input type="number" id="driveShaft6kCount" value="0"> ($6K)
+                <input type="number" id="driveShaft9kCount" value="0"> ($9K)
+            </label>
+            <label>
+                Cylinder Head ($6K, $12K, $15K):
+                <input type="number" id="cylinderHead6kCount" value="0"> ($6K)
+                <input type="number" id="cylinderHead12kCount" value="0"> ($12K)
+                <input type="number" id="cylinderHead15kCount" value="0"> ($15K)
+            </label>
+            <label>
+                Battery Cables ($3K, $6K, $9K):
+                <input type="number" id="batteryCables3kCount" value="0"> ($3K)
+                <input type="number" id="batteryCables6kCount" value="0"> ($6K)
+                <input type="number" id="batteryCables9kCount" value="0"> ($9K)
+            </label>
+            <label>
+                Fuel Tank ($3K, $4.5K, $6K):
+                <input type="number" id="fuelTank3kCount" value="0"> ($3K)
+                <input type="number" id="fuelTank45kCount" value="0"> ($4.5K)
+                <input type="number" id="fuelTank6kCount" value="0"> ($6K)
+            </label>
+            <label>
+                Racing Harness ($15K):
+                <input type="number" id="racingHarnessCount" value="0">
+            </label>
+            <label>
+                AntiLag ($20K):
+                <input type="number" id="antiLagCount" value="0">
+            </label>
+            <label>
+                Drift Tires ($15K):
+                <input type="number" id="driftTiresCount" value="0">
+            </label>
+        </div>
+
+        <div class="section">
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+
+        <div class="section total">
+            Total Cost: $<span id="totalCost">0</span>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
