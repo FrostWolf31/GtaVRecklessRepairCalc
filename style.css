@@ -1,11 +1,29 @@
+
 body {
     font-family: Arial, sans-serif;
+    background-color: black; 
+    color: white; 
 }
 
 .container {
-    
-    margin: 0 auto;
    
+    margin: 0 auto;
+  
+}
+
+.content {
+    display: flex;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section {
@@ -22,6 +40,6 @@ input[type="number"] {
 }
 
 .total {
-    font-size: 2.0em;
+    font-size: 1.2em;
     font-weight: bold;
 }

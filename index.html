@@ -8,162 +8,160 @@
 <body>
     <div class="container">
         <h1>Car Upgrade Calculator</h1>
-            <div class="section">
-            <h2>Full Upgrade Kits</h2>
-            <label>
-                Used Car Lot Gets Reckless Full Upgrade Kit:
-                <input type="radio" name="recklessKit" id="recklessKitNo" value="no" checked> No
-                <input type="radio" name="recklessKit" id="recklessKitYes" value="yes"> Yes
-               
-            </label>
-            <label>
-                Demon (Yellow) Gang Members Get Full Upgrades:
-                <input type="radio" name="demonKit" id="demonKitNo" value="no" checked> No
-                <input type="radio" name="demonKit" id="demonKitYes" value="yes"> Yes
-                
-            </label>
-        </div>
 
-        <div class="section">
-            <h2>Repairs and Paint Services</h2>
-            <label>
-                Repairs: 
-                <input type="radio" name="repairs" id="repairsNo" value="no" checked> No
-                <input type="radio" name="repairs" id="repairsYes" value="yes"> Yes
-                
-            </label>
-            <label>
-                Reckless Paint Services: 
-                <input type="radio" name="recklessPaint" id="recklessPaintNo" value="no" checked> No
-                <input type="radio" name="recklessPaint" id="recklessPaintYes" value="yes"> Yes
-                
-            </label>
-            <label>
-                Basic Paint Services: 
-                <input type="radio" name="basicPaint" id="basicPaintNo" value="no" checed> No
-                <input type="radio" name="basicPaint" id="basicPaintYes" value="yes"> Yes
-               
-            </label>
-        </div>
+        <div class="content">
+            <div class="form-section">
+                <div class="section">
+                    <h2>Full Upgrade Kits</h2>
+                    <label>
+                        Used Car Lot Gets Reckless Full Upgrade Kit:
+                        <input type="radio" name="recklessKit" id="recklessKitNo" value="no" checked> No
+                        <input type="radio" name="recklessKit" id="recklessKitYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        Demon (Yellow) Gang Members Get Full Upgrades:
+                        <input type="radio" name="demonKit" id="demonKitNo" value="no" checked> No
+                        <input type="radio" name="demonKit" id="demonKitYes" value="yes"> Yes
+                    </label>
+                </div>
 
-        <div class="section">
-            <h2>Cosmetics and NOS</h2>
-            <label>
-                Cosmetics: 
-                <input type="number" id="cosmeticsPrice" value="0"> ($1.5K each)
-                
-            </label>
-            <label>
-                NOS Bottles: 
-                <input type="radio" name="nosBottles" id="nosBottlesNo" value="no" checked> No
-                <input type="radio" name="nosBottles" id="nosBottlesYes" value="yes"> Yes
-                
-            </label>
-            <label>
-                NOS Refill: 
-                <input type="radio" name="nosRefill" id="nosRefillNo" value="no" checked> No
-                <input type="radio" name="nosRefill" id="nosRefillYes" value="yes"> Yes
-                
-            </label>
-        </div>
+                <div class="section">
+                    <h2>Repairs and Paint Services</h2>
+                    <label>
+                        Repairs: 
+                        <input type="radio" name="repairs" id="repairsNo" value="no" checked> No
+                        <input type="radio" name="repairs" id="repairsYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        Reckless Paint Services: 
+                        <input type="radio" name="recklessPaint" id="recklessPaintNo" value="no" checked> No
+                        <input type="radio" name="recklessPaint" id="recklessPaintYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        Basic Paint Services: 
+                        <input type="radio" name="basicPaint" id="basicPaintNo" value="no" checked> No
+                        <input type="radio" name="basicPaint" id="basicPaintYes" value="yes"> Yes
+                    </label>
+                </div>
 
-        <div class="section">
-            <h2>Performance Items</h2>
-            <label>
-                Turbo: 
-                <input type="radio" name="turbo" id="turboNo" value="no" checked> No
-                <input type="radio" name="turbo" id="turboYes" value="yes"> Yes
-                
-            </label>
-            <label>
-                Engine ($6K, $15K, $22.5K, $30K, $60K):
-                <input type="radio" name="engine" id="engine6k" value="6k"> (Tier 1)
-                <input type="radio" name="engine" id="engine15k" value="15k"> (Tier 2)
-                <input type="radio" name="engine" id="engine22k" value="22.5k"> (Tier 3)
-                <input type="radio" name="engine" id="engine30k" value="30k"> (Tier 4)
-                <input type="radio" name="engine" id="engine60k" value="60k"> (Tier 5)
-            </label>
-            <label>
-                Brakes ($9.9K, $19.8K, $30K):
-                <input type="radio" name="brakes" id="brakes99k" value="9.9k"> (Tier 1)
-                <input type="radio" name="brakes" id="brakes198k" value="19.8k"> (Tier 2)
-                <input type="radio" name="brakes" id="brakes30k" value="30k"> (Tier 3)
-            </label>
-            <label>
-                Suspension ($6K, $12K, $18K, $24K, $30K):
-                <input type="radio" name="suspension" id="suspension6k" value="6k"> (Tier 1)
-                <input type="radio" name="suspension" id="suspension12k" value="12k"> (Tier 2)
-                <input type="radio" name="suspension" id="suspension18k" value="18k"> (Tier 3)
-                <input type="radio" name="suspension" id="suspension24k" value="24k"> (Tier 4)
-                <input type="radio" name="suspension" id="suspension30k" value="30k"> (Tier 5)
-            </label>
-            <label>
-                Transmission ($7.5K, $15K, $22.5K, $30K):
-                <input type="radio" name="transmission" id="transmission75k" value="7.5k"> (Tier 1)
-                <input type="radio" name="transmission" id="transmission15k" value="15k"> (Tier 2)
-                <input type="radio" name="transmission" id="transmission225k" value="22.5k"> (Tier 3)
-                <input type="radio" name="transmission" id="transmission30k" value="30k"> (Tier 4)
-            </label>
-            <label>
-                Armor ($15K):
-                <input type="radio" name="armor" id="armorNo" value="no" checked> No
-                <input type="radio" name="armor" id="armorYes" value="yes" > Yes
-            
-            </label>
-            <label>
-                Oil Pump ($1.5K, $3K, $6K):
-                <input type="radio" name="oilPump" id="oilPump15k" value="1.5k"> (Tier 1)
-                <input type="radio" name="oilPump" id="oilPump3k" value="3k"> (Tier 2)
-                <input type="radio" name="oilPump" id="oilPump6k" value="6k"> (Tier 3)
-            </label>
-            <label>
-                Drive Shaft ($3K, $6K, $9K):
-                <input type="radio" name="driveShaft" id="driveShaft3k" value="3k"> (Tier 1)
-                <input type="radio" name="driveShaft" id="driveShaft6k" value="6k"> (Tier 2)
-                <input type="radio" name="driveShaft" id="driveShaft9k" value="9k"> (Tier 3)
-            </label>
-            <label>
-                Cylinder Head ($6K, $12K, $15K):
-                <input type="radio" name="cylinderHead" id="cylinderHead6k" value="6k"> (Tier 1)
-                <input type="radio" name="cylinderHead" id="cylinderHead12k" value="12k"> (Tier 2)
-                <input type="radio" name="cylinderHead" id="cylinderHead15k" value="15k"> (Tier 3)
-            </label>
-            <label>
-                Battery Cables ($3K, $6K, $9K):
-                <input type="radio" name="batteryCables" id="batteryCables3k" value="3k"> (Tier 1)
-                <input type="radio" name="batteryCables" id="batteryCables6k" value="6k"> (Tier 2)
-                <input type="radio" name="batteryCables" id="batteryCables9k" value="9k"> (Tier 3)
-            </label>
-            <label>
-                Fuel Tank ($3K, $4.5K, $6K):
-                <input type="radio" name="fuelTank" id="fuelTank3k" value="3k"> (Tier 1)
-                <input type="radio" name="fuelTank" id="fuelTank45k" value="4.5k"> (Tier 2)
-                <input type="radio" name="fuelTank" id="fuelTank6k" value="6k"> (Tier 3)
-            </label>
-            <label>
-                Racing Harness ($15K):
-                <input type="radio" name="racingHarness" id="racingHarnessNo" value="no" checked> No
-                <input type="radio" name="racingHarness" id="racingHarnessYes" value="yes"> Yes
-            </label>
-            <label>
-                AntiLag ($20K):
-                <input type="radio" name="antiLag" id="antiLagNo" value="no" checked> No
-                <input type="radio" name="antiLag" id="antiLagYes" value="yes"> Yes
-            </label>
-            <label>
-                Drift Tires ($15K):
-                <input type="radio" name="driftTires" id="driftTiresNo" value="no" checked> No
-                <input type="radio" name="driftTires" id="driftTiresYes" value="yes"> Yes
-            </label>
-        </div>
+                <div class="section">
+                    <h2>Cosmetics and NOS</h2>
+                    <label>
+                        Cosmetics: 
+                        <input type="number" id="cosmeticsPrice" value="0"> ($1.5K each)
+                    </label>
+                    <label>
+                        NOS Bottles: 
+                        <input type="radio" name="nosBottles" id="nosBottlesNo" value="no" checked> No
+                        <input type="radio" name="nosBottles" id="nosBottlesYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        NOS Refill: 
+                        <input type="radio" name="nosRefill" id="nosRefillNo" value="no" checked> No
+                        <input type="radio" name="nosRefill" id="nosRefillYes" value="yes"> Yes
+                    </label>
+                </div>
 
-        <div class="section">
-            <button onclick="calculateTotal()">Calculate Total</button>
-            <button onclick="resetForm()">Reset</button>
-        </div>
+                <div class="section">
+                    <h2>Performance Items</h2>
+                    <label>
+                        Turbo: 
+                        <input type="radio" name="turbo" id="turboNo" value="no" checked> No
+                        <input type="radio" name="turbo" id="turboYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        Engine ($6K, $15K, $22.5K, $30K, $60K):
+                        <input type="radio" name="engine" id="engine6k" value="6k"> (Tier 1)
+                        <input type="radio" name="engine" id="engine15k" value="15k"> (Tier 2)
+                        <input type="radio" name="engine" id="engine22k" value="22.5k"> (Tier 3)
+                        <input type="radio" name="engine" id="engine30k" value="30k"> (Tier 4)
+                        <input type="radio" name="engine" id="engine60k" value="60k"> (Tier 5)
+                    </label>
+                    <label>
+                        Brakes ($9.9K, $19.8K, $30K):
+                        <input type="radio" name="brakes" id="brakes99k" value="9.9k"> (Tier 1)
+                        <input type="radio" name="brakes" id="brakes198k" value="19.8k"> (Tier 2)
+                        <input type="radio" name="brakes" id="brakes30k" value="30k"> (Tier 3)
+                    </label>
+                    <label>
+                        Suspension ($6K, $12K, $18K, $24K, $30K):
+                        <input type="radio" name="suspension" id="suspension6k" value="6k"> (Tier 1)
+                        <input type="radio" name="suspension" id="suspension12k" value="12k"> (Tier 2)
+                        <input type="radio" name="suspension" id="suspension18k" value="18k"> (Tier 3)
+                        <input type="radio" name="suspension" id="suspension24k" value="24k"> (Tier 4)
+                        <input type="radio" name="suspension" id="suspension30k" value="30k"> (Tier 5)
+                    </label>
+                    <label>
+                        Transmission ($7.5K, $15K, $22.5K, $30K):
+                        <input type="radio" name="transmission" id="transmission75k" value="7.5k"> (Tier 1)
+                        <input type="radio" name="transmission" id="transmission15k" value="15k"> (Tier 2)
+                        <input type="radio" name="transmission" id="transmission225k" value="22.5k"> (Tier 3)
+                        <input type="radio" name="transmission" id="transmission30k" value="30k"> (Tier 4)
+                    </label>
+                    <label>
+                        Armor ($15K):
+                        <input type="radio" name="armor" id="armorNo" value="no" checked> No
+                        <input type="radio" name="armor" id="armorYes" value="yes" > Yes
+                    </label>
+                    <label>
+                        Oil Pump ($1.5K, $3K, $6K):
+                        <input type="radio" name="oilPump" id="oilPump15k" value="1.5k"> (Tier 1)
+                        <input type="radio" name="oilPump" id="oilPump3k" value="3k"> (Tier 2)
+                        <input type="radio" name="oilPump" id="oilPump6k" value="6k"> (Tier 3)
+                    </label>
+                    <label>
+                        Drive Shaft ($3K, $6K, $9K):
+                        <input type="radio" name="driveShaft" id="driveShaft3k" value="3k"> (Tier 1)
+                        <input type="radio" name="driveShaft" id="driveShaft6k" value="6k"> (Tier 2)
+                        <input type="radio" name="driveShaft" id="driveShaft9k" value="9k"> (Tier 3)
+                    </label>
+                    <label>
+                        Cylinder Head ($6K, $12K, $15K):
+                        <input type="radio" name="cylinderHead" id="cylinderHead6k" value="6k"> (Tier 1)
+                        <input type="radio" name="cylinderHead" id="cylinderHead12k" value="12k"> (Tier 2)
+                        <input type="radio" name="cylinderHead" id="cylinderHead15k" value="15k"> (Tier 3)
+                    </label>
+                    <label>
+                        Battery Cables ($3K, $6K, $9K):
+                        <input type="radio" name="batteryCables" id="batteryCables3k" value="3k"> (Tier 1)
+                        <input type="radio" name="batteryCables" id="batteryCables6k" value="6k"> (Tier 2)
+                        <input type="radio" name="batteryCables" id="batteryCables9k" value="9k"> (Tier 3)
+                    </label>
+                    <label>
+                        Fuel Tank ($3K, $4.5K, $6K):
+                        <input type="radio" name="fuelTank" id="fuelTank3k" value="3k"> (Tier 1)
+                        <input type="radio" name="fuelTank" id="fuelTank45k" value="4.5k"> (Tier 2)
+                        <input type="radio" name="fuelTank" id="fuelTank6k" value="6k"> (Tier 3)
+                    </label>
+                    <label>
+                        Racing Harness ($15K):
+                        <input type="radio" name="racingHarness" id="racingHarnessNo" value="no" checked> No
+                        <input type="radio" name="racingHarness" id="racingHarnessYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        AntiLag ($20K):
+                        <input type="radio" name="antiLag" id="antiLagNo" value="no" checked> No
+                        <input type="radio" name="antiLag" id="antiLagYes" value="yes"> Yes
+                    </label>
+                    <label>
+                        Drift Tires ($15K):
+                        <input type="radio" name="driftTires" id="driftTiresNo" value="no" checked> No
+                        <input type="radio" name="driftTires" id="driftTiresYes" value="yes"> Yes
+                    </label>
+                </div>
 
-        <div class="section total">
-            Total Cost: $<span id="totalCost">0</span>
+                <div class="section">
+                    <button onclick="calculateTotal()">Calculate Total</button>
+                    <button onclick="resetForm()">Reset</button>
+                </div>
+
+                <div class="section total">
+                    Total Cost: $<span id="totalCost">0</span>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="static/image_2024-06-03_171506622-removebg-preview.png" alt="Car Upgrade">
+            </div>
         </div>
     </div>
 
