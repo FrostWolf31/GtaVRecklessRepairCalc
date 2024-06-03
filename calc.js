@@ -3,36 +3,42 @@ function calculateTotal() {
 
     // Full Upgrade Kits
     if (document.getElementById('recklessKitYes').checked) {
-        totalCost += 7500; // Assuming the cost for Reckless Full Upgrade Kit is $7500
+        totalCost += 70000; // Assuming the cost for Reckless Full Upgrade Kit is $7500
     }
     if (document.getElementById('demonKitYes').checked) {
-        totalCost += 10000; // Assuming the cost for Demon Full Upgrade Kit is $10000
+        totalCost += 150000; // Assuming the cost for Demon Full Upgrade Kit is $10000
     }
 
     // Repairs and Paint Services
     if (document.getElementById('repairsYes').checked) {
-        totalCost += 2000; // Assuming the cost for Repairs is $2000
+        totalCost += 3500; // Assuming the cost for Repairs is $2000
     }
     if (document.getElementById('recklessPaintYes').checked) {
-        totalCost += 3000; // Assuming the cost for Reckless Paint Services is $3000
+        totalCost += 10000; // Assuming the cost for Reckless Paint Services is $3000
     }
     if (document.getElementById('basicPaintYes').checked) {
-        totalCost += 1000; // Assuming the cost for Basic Paint Services is $1000
+        totalCost += 4000; // Assuming the cost for Basic Paint Services is $1000
     }
 
     // Cosmetics and NOS
     let cosmeticsPrice = parseFloat(document.getElementById('cosmeticsPrice').value) || 0;
     totalCost += cosmeticsPrice * 1500; // Assuming each cosmetic item costs $1500
     if (document.getElementById('nosBottlesYes').checked) {
-        totalCost += 5000; // Assuming the cost for NOS Bottles is $5000
+        totalCost += 400000; // Assuming the cost for NOS Bottles is $5000
     }
     if (document.getElementById('nosRefillYes').checked) {
-        totalCost += 1000; // Assuming the cost for NOS Refill is $1000
+        totalCost += 200000; // Assuming the cost for NOS Refill is $1000
     }
+   // if (document.getElementById('camberYes').checked){
+       // totalCost += 3000; //Assuming they cost $3000
+       // }
+    //if (document.getElementById('dsmokeYes').checked){
+            //totalCost += 3000; //Assuming they cost $3000
+   // }  
 
     // Performance Items
     if (document.getElementById('turboYes').checked) {
-        totalCost += 8000; // Assuming the cost for Turbo is $8000
+        totalCost += 30000; // Assuming the cost for Turbo is $8000
     }
 
     let enginePrice = document.querySelector('input[name="engine"]:checked');
