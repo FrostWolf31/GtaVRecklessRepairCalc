@@ -29,12 +29,12 @@ function calculateTotal() {
     if (document.getElementById('nosRefillYes').checked) {
         totalCost += 200000; // Assuming the cost for NOS Refill is $1000
     }
-   // if (document.getElementById('camberYes').checked){
-       // totalCost += 3000; //Assuming they cost $3000
-       // }
-    //if (document.getElementById('dsmokeYes').checked){
-            //totalCost += 3000; //Assuming they cost $3000
-   // }  
+   if (document.getElementById('camberYes').checked){
+        totalCost += 3000; //Assuming they cost $3000
+        }
+    if (document.getElementById('dsmokeYes').checked){
+            totalCost += 3000; //Assuming they cost $3000
+    }  
 
     // Performance Items
     if (document.getElementById('turboYes').checked) {
